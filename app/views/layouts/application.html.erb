@@ -6,10 +6,26 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body style="background: #822222;">
-<%= link_to(image_tag("mitlogo.gif", :alt => "mitlogo", :title => "Home"), "/") %>
+<body style="background: #333399;">
+<h2>
+<%= link_to(image_tag("logo.gif", :alt => "logo"), "/") %>
+</h2>
 
-<%= yield %>
+<div id="user_nav">
+	<% if current_user %>
+	  <%= link_to "Edit Profile", edit_user_path(:current) %>
+	  <%= link_to "Logout", logout_path %>
+	<% else %>
+	  <%= link_to "Register", new_user_path %>
+	  <%= link_to "Login", login_path %>
+	<% end %>
+</div>
 
+<div id="container">
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, id: "flash_#{name}" %>
+      <% end %>
+      <%= yield %>
+    </div>
 </body>
 </html>
