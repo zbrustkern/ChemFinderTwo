@@ -7,24 +7,14 @@
 
 <p>
   <b>Email:</b>
-  <%= @user.email %>
+  <%= current_user.email %>
 </p>
 
 <p>
   <b>Password:</b>
-  <%= @user.password %>
-</p>
-
-<p>
-  <b>New:</b>
-  <%= @user.new %>
-</p>
-
-<p>
-  <b>Edit:</b>
-  <%= @user.edit %>
+  <%= current_user.password %>
 </p>
 
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to 'Back', root_url %>
