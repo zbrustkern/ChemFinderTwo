@@ -1,0 +1,17 @@
+Welcome to ChemFinder!
+
+This is a project designed for two purposes:
+
+First and foremost this is meant to serve as a learning platform as I write my first original, functional, and hopefully useful Rails app.
+
+Second, this should serve to expedite the chemical tracking, finding, and requesting for the Lipperd Lab at MIT.
+
+The intent of the finished app is to allow a user to log-on, search for a chemical by name, CAS number, or functional group, and find what is currently available and see the size and quantities as well as the exact location.
+
+Being that this is the first app I’m attempting to create, it will be woefully inadequate for legitimate usage by anyone outside the tightly-knit community of people which I tell about it… or random people who find it online for whatever reason.
+
+Probably so that this can come back and haunt me some day.
+
+I used scaffolds to set up the preliminary models: chemicals and functional groups. I’m not really sure I need to use an ActiveRecord model to track the functional group, but it seemed like if I ever wanted to add more information it would be best to implement them as a model, not just an attribute of the chemicals themselves. Also, the relationship seemed ripe for practicing use of the has_and_belongs_to_many association, which serves purpose number one of the app.
+
+Finally none of this is meant to be overly helpful or useful to anyone but me- this is a learning process, after all.
