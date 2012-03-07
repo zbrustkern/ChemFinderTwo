@@ -6,10 +6,9 @@ gem 'rails', '3.2.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-<<<<<<< HEAD
+
 gem 'authlogic'
-=======
->>>>>>> ae5fc6decae3133bd2fa08199d578a63386058a6
+
 
 
 # Gems used only for assets and not required

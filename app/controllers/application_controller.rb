@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-<<<<<<< HEAD
     
   helper_method :current_user
   
@@ -24,6 +23,4 @@ class ApplicationController < ActionController::Base
     end
   end
   
-=======
->>>>>>> ae5fc6decae3133bd2fa08199d578a63386058a6
 end

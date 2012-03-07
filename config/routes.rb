@@ -1,23 +1,19 @@
 ChemFinderTwo::Application.routes.draw do
-<<<<<<< HEAD
+
   resources :user_sessions
 
   resources :users
 
-=======
->>>>>>> ae5fc6decae3133bd2fa08199d578a63386058a6
   get "welcome/index"
 
   resources :fgroups
 
   resources :chemicals
-<<<<<<< HEAD
   
   match 'login', :to =>'user_sessions#new', :as => 'login'
   
   match 'logout', :to =>'user_sessions#destroy', :as => 'logout'
-=======
->>>>>>> ae5fc6decae3133bd2fa08199d578a63386058a6
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

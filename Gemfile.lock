@@ -29,12 +29,9 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     arel (3.0.2)
-<<<<<<< HEAD
     authlogic (3.1.0)
       activerecord (>= 3.0.7)
       activerecord (>= 3.0.7)
-=======
->>>>>>> ae5fc6decae3133bd2fa08199d578a63386058a6
     builder (3.0.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -109,10 +106,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
   authlogic
-=======
->>>>>>> ae5fc6decae3133bd2fa08199d578a63386058a6
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.1)

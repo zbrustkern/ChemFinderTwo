@@ -11,11 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20120305215003) do
-=======
-ActiveRecord::Schema.define(:version => 20120228175325) do
->>>>>>> ae5fc6decae3133bd2fa08199d578a63386058a6
 
   create_table "chemicals", :force => true do |t|
     t.string   "name"
@@ -37,7 +33,6 @@ ActiveRecord::Schema.define(:version => 20120228175325) do
     t.datetime "updated_at", :null => false
   end
 
-<<<<<<< HEAD
   create_table "user_sessions", :force => true do |t|
     t.string   "username"
     t.string   "password"
@@ -57,6 +52,4 @@ ActiveRecord::Schema.define(:version => 20120228175325) do
     t.datetime "updated_at",        :null => false
   end
 
-=======
->>>>>>> ae5fc6decae3133bd2fa08199d578a63386058a6
 end

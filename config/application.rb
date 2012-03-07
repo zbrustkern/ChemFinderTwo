@@ -37,12 +37,9 @@ module ChemFinderTwo
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
-<<<<<<< HEAD
-    config.filter_parameters << :password << :password_confirmation
-=======
-    config.filter_parameters += [:password]
 
->>>>>>> ae5fc6decae3133bd2fa08199d578a63386058a6
+    config.filter_parameters << :password << :password_confirmation
+    
     # Use SQL instead of Active Record's schema dumper when creating the database.
     # This is necessary if your schema can't be completely dumped by the schema dumper,
     # like if you have constraints or database-specific column types
