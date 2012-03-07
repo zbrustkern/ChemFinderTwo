@@ -10,7 +10,12 @@
 
 <% @fgroups.each do |fgroup| %>
   <tr>
+<<<<<<< HEAD
     <td><%= link_to fgroup.name, fgroup %></td>
+=======
+    <td><%= fgroup.name %></td>
+    <td><%= link_to 'Show', fgroup %></td>
+>>>>>>> ae5fc6decae3133bd2fa08199d578a63386058a6
     <td><%= link_to 'Edit', edit_fgroup_path(fgroup) %></td>
     <td><%= link_to 'Destroy', fgroup, confirm: 'Are you sure?', method: :delete %></td>
   </tr>

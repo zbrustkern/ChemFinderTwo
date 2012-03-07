@@ -1,9 +1,12 @@
 class ChemicalsController < ApplicationController
   # GET /chemicals
   # GET /chemicals.json
+<<<<<<< HEAD
   
   before_filter :require_user, :only => [:create, :update, :edit, :destroy]
   
+=======
+>>>>>>> ae5fc6decae3133bd2fa08199d578a63386058a6
   def index
     @chemicals = Chemical.search(params[:search])
 
@@ -47,7 +50,11 @@ class ChemicalsController < ApplicationController
 
     respond_to do |format|
       if @chemical.save
+<<<<<<< HEAD
         format.html { redirect_to @chemical , notice: 'Chemical was successfully created.' }
+=======
+        format.html { redirect_to @chemical, notice: 'Chemical was successfully created.' }
+>>>>>>> ae5fc6decae3133bd2fa08199d578a63386058a6
         format.json { render json: @chemical, status: :created, location: @chemical }
       else
         format.html { render action: "new" }
