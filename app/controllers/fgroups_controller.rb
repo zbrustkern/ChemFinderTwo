@@ -1,6 +1,10 @@
 class FgroupsController < ApplicationController
   # GET /fgroups
   # GET /fgroups.json
+  
+  before_filter :require_user, :only => [:create, :update, :edit, :destroy]
+  
+  
   def index
     @fgroups = Fgroup.all
 

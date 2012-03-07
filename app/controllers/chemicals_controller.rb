@@ -1,6 +1,9 @@
 class ChemicalsController < ApplicationController
   # GET /chemicals
   # GET /chemicals.json
+  
+  before_filter :require_user, :only => [:create, :update, :edit, :destroy]
+  
   def index
     @chemicals = Chemical.search(params[:search])
 
